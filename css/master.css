@@ -1,0 +1,195 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --basic:#511999;
+    --hover:#854f6c;
+    --dark:#190019;
+    --gray:#DFB6D8;
+    --light:#fbe4d8;
+}
+.basic-color{
+    color:var(--basic) ;
+}
+.bg-basic{
+    background-color:var(--basic);
+}
+.hover-color{
+    color: var(--hover);
+}
+.dark-color{
+    color: var(--dark);
+}
+.gray-color{
+    color: var(--gray);
+}
+.gray{
+    background-color: var(--gray);
+}
+.dark{
+    background-color: var(--dark);
+}
+.border-style{
+    border: 2px solid #eee;
+    border-radius: 5px;
+    width:fit-content;
+}
+.strong{
+    font-size:calc(1.425rem + 2.1vw);
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.extra{
+    border-bottom: 1px solid rgba(53, 94, 252, .07);;
+}
+.data{
+    display: none;
+}
+.border{
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+.navbar .navbar-nav .nav-link,.navbar .nav-item .nav-link,footer ul li {
+    transition: 0.3s;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-item .nav-link i:hover,
+.navbar .navbar-nav .nav-link:focus{
+    color: var(--hover);
+}
+.navbar-nav .nav-link:not(.active){
+    color: #777;
+}
+@media(max-width:767px){
+    .buttons{
+        display: none;
+    }
+}
+.landing{
+    background: url(../css/img/carousel-1.jpg);
+    background-size: cover;
+    height: 100vh;
+    transition: 0.3s;
+}
+.back {
+    background: url(../css/img/carousel-2.jpg);
+    background-size: cover;
+    height: 60vh;
+    transition: 0.9s;
+}
+iframe{
+    width: 100%;
+}
+input{
+    outline: none;
+}
+.explore{
+    width: fit-content;
+    transition: 0.3s;
+}
+.explore:hover{
+    background-color: var(--hover);
+}
+#btn1,#btn2,#btn3{
+    outline: none;
+    background-color: transparent;
+    border:1px solid #eee;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%; 
+}
+#btn1:hover,#btn2:hover,#btn3:hover{
+    border-bottom: 1px solid #fff;
+    color: var(--basic);
+}
+.Icon-Info{
+    border-right: 2px solid #eee;
+}
+.info:first-child{
+    border-left: 2px solid #eee;
+}
+@media(max-width:991px){
+    .Icon-Info{
+        border-bottom: 2px solid #eee;
+        border-right:2px solid transparent;
+    }
+}
+@media(max-width:767px){
+    .lastAbout .cards{
+        display: flex;
+        flex-direction: column;}}
+.lastAbout .cards .card:hover{
+    background:var(--hover) ;
+}
+.lastAbout .cards .card-body:hover i,.lastAbout .cards .card-body:hover p ,.lastAbout .cards .card-body:hover h6,
+.lastAbout .cards .card-body:hover a ,.scrol-sec:hover h3,.team .card:hover h3,.team .card:hover i{
+    color: #fff ;}
+.form .container::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 60%;
+    top: -114px;
+    left: -28px;
+    background: url(../css/img/wave.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+.scroll  .scrol-sec img{
+    position: relative;
+    left: -26px;
+    top: -10px;;
+}
+.scroll .row{
+    width: 100%;
+    flex: none;
+    align-items: center;
+    }
+.scrol-sec,.team .card,.lastAbout .cards .card{
+    transition: 0.3s;
+    }
+.scrol-sec:hover,.team .card:hover{
+    background-color: var(--hover);}
+    .scroll {
+        overflow-x: scroll;}
+    .scroll::-webkit-scrollbar{
+        display: none;}
+        .Testimonial .btni i{
+            position: relative;
+        top: -280px;
+        left: 0px;
+        background-color: white;}
+    .Testimonial .row {
+        overflow-x: scroll;
+        flex: none;
+    }
+    .Testimonial .row::-webkit-scrollbar{
+        display: none;
+    }
+    footer{
+        background-color: #260226d6;
+    }
+footer ul li:hover,li a:hover,.Testimonial .check i:hover{
+    scale: 1.1;
+    color: var(--hover);
+}.up-btn{
+    position: fixed;
+    bottom: 25px;
+    right:-55px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.show{
+    right: 25px;
+}
